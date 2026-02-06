@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <ul>
+        <li><a href="main.html">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a class="active" href="contact.html">Leadership</a></li>
+        <li><a href="#about">About</a></li>
+    </ul>
+
+    <!-- Leadership Team Section -->
+    <style>
+        /* Section */
+        .leadership-team {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .leadership-team h2 {
+            margin-bottom: 24px;
+            font-size: 1.8rem;
+        }
+
+        /* Grid */
+        .leader-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        /* Card */
+        .leader-card {
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            padding: 20px;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.2s ease;
+        }
+
+        .leader-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Photo */
+        .leader-photo img {
+            width: 140px;
+            height: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            /* circle style */
+            margin-bottom: 12px;
+        }
+
+        /* Info */
+        .leader-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0;
+            text-align: center;
+        }
+
+        .leader-position {
+            font-size: 1rem;
+            font-style: italic;
+            color: #555;
+            margin: 4px 0 12px;
+            text-align: center;
+        }
+
+        .leader-about {
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Contact */
+        .leader-contact {
+            text-align: center;
+        }
+
+        .leader-contact p {
+            margin: 4px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+    <section class="leadership-team">
+        <h2>Meet Our Leadership Team</h2>
+
+        <div class="leader-grid">
+            <!-- Leader Card -->
+            <div class="leader-card">
+                <div class="leader-photo">
+                    <img src="images/temp2electricbogaloo.png" alt="Leader Photo">
+                </div>
+                <div class="leader-info">
+                    <h3 class="leader-name">gatekeeped</h3>
+                    <p class="leader-position">President</p>
+                    <p class="leader-about">
+                        replace
+                    </p>
+                    <div class="leader-contact">
+                        <p>📞 (555) 123-4567</p>
+                        <p>✉️ jane.doe@email.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copy/Paste more leader-cards below -->
+            <div class="leader-card">
+                <div class="leader-photo">
+                    <img src="images/tempt3.png" alt="Leader Photo">
+                </div>
+                <div class="leader-info">
+                    <h3 class="leader-name">shhhhhhh</h3>
+                    <p class="leader-position">Vice President</p>
+                    <p class="leader-about">
+                        blank
+                    </p>
+                    <div class="leader-contact">
+                        <p>📞 (555) 987-6543</p>
+                        <p>✉️ john.smith@email.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

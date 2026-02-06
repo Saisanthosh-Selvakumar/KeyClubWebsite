@@ -1,0 +1,99 @@
+h1 {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Be Vietnam Pro", sans-serif;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+}
+
+p {
+  font-family: "Lato", sans-serif;
+}
+
+/* NAVBAR SETTINGS */
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  border: 1px solid #e7e7e7;
+  background-color: #f3f3f3;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  font-family: "Lato", sans-serif;
+  display: block;
+  color: #2E1A47;
+  text-align: center;
+  padding: 14px 14px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+li a.active {
+  color: white;
+  background-color: #2E1A47;
+}
+
+/* "<!-- AI SECTION!!-->"
+/* HERO */
+.hero {
+  background: #2E1A47;
+  color: white;
+  text-align: left;
+  padding: 80px 20px;
+}
+
+/* 
+.hero .cta-btn {
+  font-family: "Century Gothic", sans-serif;
+  background: #111;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+/* EVENT GRID */
+.events {
+  padding: 40px 20px;
+}
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+.event-card {
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 0 150px #2E1A47;
+}
+.event-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Carousel Information */
+.carouselDescription {
+  width: 70%;
+  padding: 32px 16px; 
+  background: #fff;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}

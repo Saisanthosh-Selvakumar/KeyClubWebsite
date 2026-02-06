@@ -1,0 +1,53 @@
+.carouselInformation {
+  display: flex; flex-direction: row;
+}
+
+.carousel { 
+  padding: 32px 16px; 
+  text-align: center; 
+  outline: none; 
+  width: 30%;
+}
+
+.carousel-title { 
+  margin-bottom: 12px; 
+}
+
+.carousel-viewport {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden;              /* IMPORTANT */
+  border-radius: 14px;
+}
+
+.carousel-track {
+  display: flex;                 /* slides in a row */
+  transition: transform 0.45s ease;
+  will-change: transform;
+}
+
+.carousel-track > img {
+  flex: 0 0 100%;                /* each slide = full viewport width */
+  max-width: 100%;
+  height: auto;
+  display: block;
+  user-select: none;
+  pointer-events: none;          /* smoother pointer drag */
+}
+
+.carousel-btn {
+  position: absolute; inset-block: 0; margin-block: auto;
+  height: 40px; width: 40px; border: none; border-radius: 50%;
+  background: rgba(0,0,0,0.5); color: #fff; cursor: pointer;
+  transform: translateY(-50%); top: 50%;
+}
+.carousel-btn.prev { left: 10px; }
+.carousel-btn.next { right: 10px; }
+
+.carousel-dots { display: flex; gap: 8px; justify-content: center; margin-top: 12px; }
+.carousel-dots button {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: none; background: #cfd2d6; cursor: pointer;
+}
+.carousel-dots button[aria-selected="true"] { background: #111; }
